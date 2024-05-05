@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_app/pages/home_page.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -48,7 +49,16 @@ class LoginPage extends StatelessWidget {
               )
             ],
           ),
-          ElevatedButton(onPressed: () {}, child: Text("login"))
+          ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomePage(),
+                  ),
+                );
+              },
+              child: Text("login"))
         ],
       ),
     );
