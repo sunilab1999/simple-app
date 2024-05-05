@@ -18,9 +18,6 @@ class MyApp extends StatelessWidget {
         ),
         body: Column(
           children: [
-            Row(
-              children: [],
-            ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextField(
